@@ -1,0 +1,48 @@
+[
+  
+  {
+    "id": "1",
+    "title": "Coral Reef Conservation",
+    "description": "A React based web application using firebase database to improve efficiency on data collection of coral reef species",
+    "image": "/images/coralReefConservation.png",
+    "tags": ["All", "Web"],
+    "gitUrl": "https://github.com/IsaacTin?tab=repositories",
+    "previewUrl": "https://coral-2fea3.web.app/home"
+  },
+  {
+    "id": "2",
+    "title": "NUS Orbital Summer Project",
+    "description": "A web application with improved UI/UX of NUS module selection web application",
+    "image": "/images/Modreg.jpg",
+    "tags": ["All", "Web"],
+    "gitUrl": "https://github.com/IsaacTin/nus-modreg",
+    "previewUrl": "https://github.com/IsaacTin/nus-modreg"
+  },
+  {
+    "id": "3",
+    "title": "Old Portfolio",
+    "description": "My old Portfolio",
+    "image": "/images/oldPortfolioWebsiteImage.png",
+    "tags": ["All", "Web"],
+    "gitUrl": "https://github.com/IsaacTin/portfolio",
+    "previewUrl": "test"
+  },
+  {
+    "id": "4",
+    "title": "Eva",
+    "description": "A Human Resource CLI application coded in Java for one of my modules' team project requirements",
+    "image": "/images/TP.jpg",
+    "tags": ["All"],
+    "gitUrl": "https://github.com/IsaacTin/tp",
+    "previewUrl": "https://github.com/IsaacTin/tp"
+  },
+  {
+    "id": "5",
+    "title": "Pepe the Frog",
+    "description": "A simple CLI application coded in Java for one of my modules' individual project requirements",
+    "image": "/images/Ip.jpg",
+    "tags": ["All"],
+    "gitUrl": "https://github.com/IsaacTin/ip",
+    "previewUrl": "https://github.com/IsaacTin/ip"
+  }
+]
