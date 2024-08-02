@@ -3,7 +3,7 @@ import { ProjectTagDetails } from '../types/Types'
 
 const ProjectTag = ({name, onClick, isSelected} : ProjectTagDetails) => {
     const buttonStyles = isSelected 
-    ? "text-white border-purple-500"
+    ? "text-white border-secondary-500"
     : "text-[#ADB7BE] border-slate-600 hover:border-white"
     return (
         <button 
