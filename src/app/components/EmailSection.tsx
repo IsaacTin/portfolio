@@ -1,14 +1,14 @@
 "use client"
-import React, { useRef, useState } from 'react'
-import GithubIcon from '../../../public/github.svg'
-import LinkedinIcon from '../../../public/linkedin.svg'
-import Link from 'next/link'
-import Image from 'next/image'
+import React, { useRef, useState } from 'react';
+import GithubIcon from '../../../public/github.svg';
+import LinkedinIcon from '../../../public/linkedin.svg';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const EmailSection = () => {
     const formRef = useRef<HTMLFormElement>(null);
-    const [emailSubmitted, setEmailSubmitted] = useState(false)
-    const myEmail : string = process.env.FROM_EMAIL as string
+    const [emailSubmitted, setEmailSubmitted] = useState(false);
+    const myEmail : string = process.env.FROM_EMAIL as string;
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -24,15 +24,14 @@ const EmailSection = () => {
             toEmail: formData.get('email') as string,
             subject: "Thank You for Contacting Me!",
             message: `
-                    <p>Hi,</p>
-                    <p>Thank you for contacting me.</p>
-                    <p>I will get back to you shortly.</p>
+                    <p>Hi!</p>
+                    <p>Thank you for contacting me!</p>
+                    <p>I will get back to you shortly!</p>
                     <br/>
-                    <p> Regards,</p>
-                    <p> Isaac Tin</p>
+                    <p> Regards, </p>
+                    <p> Isaac Tin </p>
             `
         };
-
 
         try {
             const JSONdata = JSON.stringify(data);
@@ -63,7 +62,6 @@ const EmailSection = () => {
             message: formData.get('message') as string
         };
 
-
         try {
             const JSONdata = JSON.stringify(data);
             const endPoint = "/api/send";
@@ -80,7 +78,7 @@ const EmailSection = () => {
             if (response.ok) {
                 console.log('Message Sent');
                 setEmailSubmitted(true);
-                form.reset()
+                form.reset(); // Reset the form fields
             } else {
                 console.error('Error:', resData);
             }
@@ -91,14 +89,13 @@ const EmailSection = () => {
 
     return (
         <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
-            <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-secondary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+            <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
             <div className="z-10">
                 <h5 className='text-xl font-bold text-white my-2'>
-                    Let's Connect
+                    Let&apos;s Connect
                 </h5>
                 <p className='text-[#ADB7BE] mb-4 max-w-md'>
-                    {" "}
-                    I'm currently looking for new opportunities
+                    I&apos;m currently looking for new opportunities
                 </p>
                 <div className='socials flex flex-row gap-2'>
                     <Link href="https://github.com/IsaacTin">
@@ -152,7 +149,7 @@ const EmailSection = () => {
                         </textarea>
                     </div>
 
-                    <button type="submit" className="bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
+                    <button type="submit" className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
                         Send Message
                     </button>
                     {
@@ -168,4 +165,4 @@ const EmailSection = () => {
     )
 }
 
-export default EmailSection
+export default EmailSection;
