@@ -20,12 +20,17 @@ const achievementList = [
         value: "1",
         postfix: "+"
     },
+    {
+        metric: "Certificates",
+        value: "4",
+        prefix: "~"
+    }
 ]
 
 export const AchievementSection = () => {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="border-[#33353F] border rounded-md py-8 px-17 flex flex-row items-center justify-between">
+        <div className="border-[#33353F] border rounded-md py-8 px-17 flex flex-row items-center justify-between ">
             {achievementList.map((achievement, index) => {
                 return (
                     <div 
