@@ -44,7 +44,7 @@ const TAB_DATA: TabData[] = [
   },
 ];
 
-const aboutMeDescription = "Adventurous, curious and imaginative in nature, I often venture out to seek and explore new things in both my professional work and personal life. Reading, writing, learning and applying new technologies are examples of hobbies I have which fuel my curiosity and satisfy my adventurous spirit. I also have a deep appreciation for teamwork and collaboration- instilled through hobbies such as team sports - allowing me to be not only a strong individual contributor, but also an approachable and capable team player."
+const aboutMeDescription = "Adventurous, curious and imaginative in nature, I often venture out to seek and explore new things in both my professional work and personal life. Reading, writing, learning and applying new technologies are examples of hobbies I have which fuel my curiosity and satisfy my adventurous spirit. I also have a deep appreciation for teamwork and collaboration — instilled through hobbies such as team sports — allowing me to be not only a strong individual contributor, but also an approachable and capable team player."
 
 const contentVariants = {
   hidden: { opacity: 0, scale: 0.9 },
