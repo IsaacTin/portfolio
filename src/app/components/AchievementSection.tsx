@@ -17,12 +17,12 @@ const achievementList = [
     },
     {
         metric: "Years",
-        value: "1",
+        value: "2",
         postfix: "+"
     },
     {
         metric: "Certificates",
-        value: "4",
+        value: "5",
         prefix: "~"
     }
 ]
@@ -35,7 +35,7 @@ export const AchievementSection = () => {
                 return (
                     <div 
                         key={index} 
-                        className="flex flex-col items-center justify-center mx-8 max-[320px]:mx-1 max-[375px]:mx-2 my-1 "
+                        className="flex flex-col items-center justify-center mx-8 max-[320px]:mx-1  max-[424px]:mx-2 my-1 "
                     >
                         <h2 className="text-white text-4xl fond-bold flex flex-row">
                             {achievement.prefix}
