@@ -98,10 +98,10 @@ const EmailSection = () => {
                     I&apos;m currently looking for new opportunities
                 </p>
                 <div className='socials flex flex-row gap-2'>
-                    <Link href="https://github.com/IsaacTin">
+                    <Link href="https://github.com/IsaacTin" target="_blank" rel="noopener noreferrer">
                         <Image src={GithubIcon} alt='Github Icon' className='w-30 h-30'></Image>
                     </Link>
-                    <Link href="https://www.linkedin.com/in/isaac-tin-4346631a5/">
+                    <Link href="https://www.linkedin.com/in/isaac-tin-4346631a5/" target="_blank" rel="noopener noreferrer">
                         <Image src={LinkedinIcon} alt='Linkedin Icon' className='w-50 h-50'></Image>
                     </Link>
                 </div>
